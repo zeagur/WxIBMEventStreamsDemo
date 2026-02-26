@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="code/source"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="code/jars/static/kafka-clients-3.1.0.jar"/>
+	<classpathentry kind="lib" path="code/jars/static/lz4-java-1.8.0.jar"/>
+	<classpathentry kind="lib" path="code/jars/static/slf4j-api-1.7.30.jar"/>
+	<classpathentry kind="lib" path="code/jars/static/snappy-java-1.1.8.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/wM"/>
+	<classpathentry kind="var" path="ECLIPSE_CORECMD"/>
+	<classpathentry kind="var" path="ECLIPSE_CORERUN"/>
+	<classpathentry kind="var" path="ECLIPSE_DRAW2D"/>
+	<classpathentry kind="var" path="ECLIPSE_E4_CORE"/>
+	<classpathentry kind="var" path="ECLIPSE_E4_MWB"/>
+	<classpathentry kind="var" path="ECLIPSE_E4_UIWB"/>
+	<classpathentry kind="var" path="ECLIPSE_E4_UIWB3"/>
+	<classpathentry kind="var" path="ECLIPSE_EQREG"/>
+	<classpathentry kind="var" path="ECLIPSE_EQUINOX"/>
+	<classpathentry kind="var" path="ECLIPSE_JFACE"/>
+	<classpathentry kind="var" path="ECLIPSE_JOBS"/>
+	<classpathentry kind="var" path="ECLIPSE_OSGI"/>
+	<classpathentry kind="var" path="ECLIPSE_OSGI_SVC"/>
+	<classpathentry kind="var" path="ECLIPSE_PREF"/>
+	<classpathentry kind="var" path="ECLIPSE_SWT"/>
+	<classpathentry kind="var" path="ECLIPSE_UIWB"/>
+	<classpathentry kind="var" path="IS_CLIENT"/>
+	<classpathentry kind="var" path="IS_CORE"/>
+	<classpathentry kind="var" path="IS_EDITOR"/>
+	<classpathentry kind="var" path="IS_ENTTK"/>
+	<classpathentry kind="var" path="IS_G11N"/>
+	<classpathentry kind="var" path="IS_ICU4J"/>
+	<classpathentry kind="var" path="IS_JAVAX_XMLSOAP"/>
+	<classpathentry kind="var" path="IS_MAIL"/>
+	<classpathentry kind="var" path="IS_SERVER"/>
+	<classpathentry kind="var" path="IS_UIUTILS"/>
+	<classpathentry kind="var" path="IS_WSDL4J"/>
+	<classpathentry kind="var" path="OSGI_SVC_PREF"/>
+	<classpathentry kind="var" path="WEBMETHODS_HOME"/>
+	<classpathentry kind="output" path="code/classes"/>
+</classpath>

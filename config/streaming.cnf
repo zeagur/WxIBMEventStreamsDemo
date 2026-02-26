@@ -8,27 +8,31 @@
         <value name="description">EventStreams Catalogue App</value>
         <value name="package">WxIBMEventStreamsDemo</value>
         <value name="type">Kafka</value>
-        <value name="host">https://broker-4-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093</value>
-        <value name="clientId">jc_</value>
+        <value name="host">es-scram-kafka-bootstrap-ea-demo.apps.itz-ycynma.infra01-lb.dal14.techzone.ibm.com:443</value>
+        <value name="clientId">wx_</value>
         <value name="other_properties">security.protocol=SASL_SSL
 ssl.protocol=TLSv1.2
-sasl.mechanism=PLAIN
+sasl.username=es-scram
+sasl.mechanism=SCRAM-SHA-512
 ssl.enabled.protocols=TLSv1.2
-sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username="token" password="[*****]" ;
-bootstrap.servers=broker-4-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-1-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-2-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-0-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-3-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-5-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093
-ssl.endpoint.identification.algorithm=HTTPS</value>
+sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="es-scram" password="[*****]" ;
+group.id=WX-00001
+sasl.password=[*****]
+client.id=WX-PRODUCE</value>
         <value name="other_runtime_properties">ssl.protocol=TLSv1.2
+sasl.username=es-scram
 ssl.enabled.protocols=TLSv1.2
-bootstrap.servers=broker-4-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-1-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-2-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-0-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-3-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093,broker-5-bwf0w5kgsmz9m08s.kafka.svc11.us-south.eventstreams.cloud.ibm.com:9093
+group.id=WX-00001
 security.protocol=SASL_SSL
 streaming.consumer.validate.consumers.not.greater.than.partitions=true
-sasl.mechanism=PLAIN
-sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username="token" password="[*****]" ;
-ssl.endpoint.identification.algorithm=HTTPS
+sasl.mechanism=SCRAM-SHA-512
+sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="es-scram" password="[*****]" ;
+sasl.password=[*****]
+client.id=WX-PRODUCE
 streaming.client.publish.mode=asynchronous</value>
         <value name="enabled">true</value>
         <value name="securityProtocol">SASL_SSL</value>
-        <value name="truststoreAlias"></value>
+        <value name="truststoreAlias">EA_TRUSTSTORE</value>
         <value name="keystoreAlias"></value>
         <null name="keystoreKeyAlias"/>
         <array name="subjects" type="record" depth="1">

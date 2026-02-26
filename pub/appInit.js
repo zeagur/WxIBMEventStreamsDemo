@@ -73,20 +73,6 @@ app.controller("myCtrl", function ($scope, myserv) {
       document.getElementById(`service${j}`).innerHTML = document.getElementById(`service${j}`).innerHTML.replace(service.getAttribute("title"),$scope.serviceMap.get(`service${j}`));
       document.getElementById(`service${j}`).setAttribute("title",$scope.serviceMap.get(`service${j}`));
     }
-    for(i=0;i<servicesList.length;i++){
-      var inputList = document.getElementById(`servicebody${i}`).getElementsByClassName("input-row");
-      for(j=0;j<inputList.length;j++){
-        var input = document.getElementById(`${i}${j}iname`);
-        document.getElementById(`${i}${j}iname`).innerHTML = document.getElementById(`${i}${j}iname`).innerHTML.replace(input.getAttribute("title"),$scope.ioMap.get(`${i}${j}iname`));
-        document.getElementById(`${i}${j}iname`).setAttribute("title",$scope.ioMap.get(`${i}${j}iname`));
-      }
-      var outputList = document.getElementById(`servicebody${i}`).getElementsByClassName("output-row");
-      for(j=0;j<outputList.length;j++){
-        var output = document.getElementById(`${i}${j}oname`);
-        document.getElementById(`${i}${j}oname`).innerHTML = document.getElementById(`${i}${j}oname`).innerHTML.replace(output.getAttribute("title"),$scope.ioMap.get(`${i}${j}oname`));
-        document.getElementById(`${i}${j}oname`).setAttribute("title",$scope.ioMap.get(`${i}${j}oname`));
-      }
-    }
 }
 
   $scope.addLastUpdated = function(){
@@ -128,20 +114,6 @@ app.controller("myCtrl", function ($scope, myserv) {
       var service = servicesList[j].getElementsByTagName("button")[0];
       document.getElementById(`service${j}`).innerHTML = document.getElementById(`service${j}`).innerHTML.replace(service.getAttribute("title"),service.getAttribute("title").split(':').pop());
       document.getElementById(`service${j}`).setAttribute("title",service.getAttribute("title").split(':').pop());
-    }
-    for(i=0;i<servicesList.length;i++){
-      var inputList = document.getElementById(`servicebody${i}`).getElementsByClassName("input-row");
-      for(j=0;j<inputList.length;j++){
-        var input = document.getElementById(`${i}${j}iname`);
-        document.getElementById(`${i}${j}iname`).innerHTML = document.getElementById(`${i}${j}iname`).innerHTML.replace(/([a-zA-Z0-9_]+[\.])+/,'').replace(/([a-zA-Z0-9_]+:)+/,'');
-        document.getElementById(`${i}${j}iname`).setAttribute("title",input.getAttribute("title").replace(/([a-zA-Z0-9_]+[\.])+/,'').replace(/([a-zA-Z0-9_]+:)+/,''));
-      }
-      var outputList = document.getElementById(`servicebody${i}`).getElementsByClassName("output-row");
-      for(j=0;j<outputList.length;j++){
-        var output = document.getElementById(`${i}${j}oname`);
-        document.getElementById(`${i}${j}oname`).innerHTML = document.getElementById(`${i}${j}oname`).innerHTML.replace(/([a-zA-Z0-9_]+[\.])+/,'').replace(/([a-zA-Z0-9_]+:)+/,'');
-        document.getElementById(`${i}${j}oname`).setAttribute("title",output.getAttribute("title").replace(/([a-zA-Z0-9_]+[\.])+/,'').replace(/([a-zA-Z0-9_]+:)+/,''));
-      }
     }
   }
 
@@ -417,10 +389,13 @@ app.controller("myCtrl", function ($scope, myserv) {
       hash = location.hash.replace(/^#/, "");
       if (hash == "main-home" || hash == "") {
         document.getElementById(`main-home-li`).style.borderTop =
-          "1px solid #ffffffaa";
+          "4px solid #fff";
         document.getElementById(`main-home-li`).style.backgroundColor =
-          "#ffffff55";
-       
+          "#14629f";
+        document.getElementById(`main-home-li`).style.borderRight =
+          "2px solid #3183de";
+        document.getElementById(`main-home-li`).style.borderLeft =
+          "2px solid #3183de";
         document.getElementById(`document-li`).style.borderTop = "none";
         document.getElementById(`document-li`).style.backgroundColor =
           "transparent";
@@ -433,10 +408,13 @@ app.controller("myCtrl", function ($scope, myserv) {
         hash == "api"
       ) {
         document.getElementById(`document-li`).style.borderTop =
-          "1px solid #ffffffaa";
+          "4px solid #fff";
         document.getElementById(`document-li`).style.backgroundColor =
-          "#ffffff55";
-       
+          "#14629f";
+        document.getElementById(`document-li`).style.borderRight =
+          "2px solid #3183de";
+        document.getElementById(`document-li`).style.borderLeft =
+          "2px solid #3183de";
         document.getElementById(`main-home-li`).style.borderTop = "none";
         document.getElementById(`main-home-li`).style.backgroundColor =
           "transparent";
@@ -446,7 +424,7 @@ app.controller("myCtrl", function ($scope, myserv) {
         document.getElementById(`main-home-li`).style.borderTop =
           "4px solid #fff";
         document.getElementById(`main-home-li`).style.backgroundColor =
-          "black";
+          "#14629f";
         document.getElementById(`main-home-li`).style.borderRight =
           "2px solid #3183de";
         document.getElementById(`main-home-li`).style.borderLeft =
@@ -692,22 +670,6 @@ app.controller("myCtrl", function ($scope, myserv) {
       $scope.serviceMap.set(`service${j}`,service.getAttribute("title"))
       document.getElementById(`service${j}`).innerHTML = document.getElementById(`service${j}`).innerHTML.replace(service.getAttribute("title"),service.getAttribute("title").split(':').pop());
       document.getElementById(`service${j}`).setAttribute("title",service.getAttribute("title").split(':').pop());
-    }
-    for(i=0;i<servicesList.length;i++){
-      var inputList = document.getElementById(`servicebody${i}`).getElementsByClassName("input-row");
-      for(j=0;j<inputList.length;j++){
-        var input = document.getElementById(`${i}${j}iname`);
-        $scope.ioMap.set(`${i}${j}iname`,input.getAttribute("title"));
-        document.getElementById(`${i}${j}iname`).innerHTML = document.getElementById(`${i}${j}iname`).innerHTML.replace(/([a-zA-Z0-9_]+[\.])+/,'').replace(/([a-zA-Z0-9_]+:)+/,'');
-        document.getElementById(`${i}${j}iname`).setAttribute("title",input.getAttribute("title").replace(/([a-zA-Z0-9_]+[\.])+/,'').replace(/([a-zA-Z0-9_]+:)+/,''));
-      }
-      var outputList = document.getElementById(`servicebody${i}`).getElementsByClassName("output-row");
-      for(j=0;j<outputList.length;j++){
-        var output = document.getElementById(`${i}${j}oname`);
-        $scope.ioMap.set(`${i}${j}oname`,output.getAttribute("title"))
-        document.getElementById(`${i}${j}oname`).innerHTML = document.getElementById(`${i}${j}oname`).innerHTML.replace(/([a-zA-Z0-9_]+[\.])+/,'').replace(/([a-zA-Z0-9_]+:)+/,'');
-        document.getElementById(`${i}${j}oname`).setAttribute("title",output.getAttribute("title").replace(/([a-zA-Z0-9_]+[\.])+/,'').replace(/([a-zA-Z0-9_]+:)+/,''));
-      }
     }
     fetch(`${location.origin}/invoke/pub.date/getCurrentDate`)
   .then((response) => {

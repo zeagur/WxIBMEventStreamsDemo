@@ -85,7 +85,7 @@
 }
 
 #navreload:hover{
-  background-color: black;
+  background-color: #14629f;
   color: #fff;
 }
 
@@ -118,9 +118,9 @@
   width: 60px;
   font-size: 1.5em;
   border-radius: 50%;
-  border: 1px solid #ffffff55;
+  border: 1px solid #1776bf;
   background-color: transparent;
-  color: #ffffff55;
+  color: #1776bf;
   text-align: center;
   cursor: pointer;
 }
@@ -128,7 +128,7 @@
   background-color: aliceblue;
 }
 #tothetop:focus {
-  outline: 1px solid #ffffff55 !important;
+  outline: 1px solid #1776bf !important;
 }
 .dlt-accordion-item:nth-child(odd) {
   background: #fff;
@@ -179,7 +179,7 @@
 
 .three-dots-vertical {
   font-weight: 800 !important;
-  color: #ffffff55 !important;
+  color: #1776bf !important;
 }
 
 .arrow-down {
@@ -211,7 +211,7 @@ body {
 }
 
 .bg-primary {
-  background-color: black !important;
+  background-color: #1776bf !important;
 }
 
 .methods {
@@ -438,7 +438,7 @@ tr.collapse.show {
   background: #fff;
 }
 .dropdown-item:hover{
-  outline: .125rem solid var(--wmio-primary-color,#ffffff55)!important;
+  outline: .125rem solid var(--wmio-primary-color,#1776bf)!important;
 }
 .dropdown-item.active,.dropdown-item:active{
   background-color: #cde6f9;
@@ -484,7 +484,7 @@ tr.collapse.show {
 .active.sidenav-inneroption {
   background-color: #b6b6b6;
   color: #fff !important;
-  border-left: 4px solid var(--wmio-primary-color, black);
+  border-left: 4px solid var(--wmio-primary-color, #1776bf);
 }
 
 .sidenav-inneroption:hover {
@@ -495,7 +495,7 @@ tr.collapse.show {
 .sidenav-inneroption {
   margin-bottom: 0;
   font-weight: 400;
-  border-left: 1px black;
+  border-left: 1px #1776bf;
   border-radius: 0px !important;
   color: #000;
   border-left: 4px solid transparent;
@@ -511,8 +511,10 @@ tr.collapse.show {
 }
 
 .main-nav-item-selected {
-  border-top: 1px solid #ffffffaa;
-  background-color: #ffffffaa;
+  border-top: 4px solid #fff;
+  background-color: #14629f;
+  border-right: 2px solid #3183de;
+  border-left: 2px solid #3183de;
 }
 .top-nav {
   display: flex;
@@ -523,7 +525,7 @@ tr.collapse.show {
 
 /* .top-nav.active{
     border-top: 4px solid #fff;
-background-color: black;
+background-color: #14629f;
 border-right: 2px solid #3183de;
 border-left: 2px solid #3183de;
 } */
@@ -560,17 +562,18 @@ table thead tr th {
 }
 
 .alert-primary {
-  color: #ffffff55;
+  color: #1776bf;
   font-size: 12px;
   margin-top: 1rem;
   background-color: aliceblue;
-  border-color: #ffffff99;;
+  border-color: #61affe;
 }
 
 ul.main-nav > li.active {
-  border-top: 2px solid #ffffff99;
-  background-color: #ffffff33;
-
+  border-top: 4px solid #fff;
+  background-color: #14629f;
+  border-right: 2px solid #3183de;
+  border-left: 2px solid #3183de;
 }
 .topbar {
   display: none;

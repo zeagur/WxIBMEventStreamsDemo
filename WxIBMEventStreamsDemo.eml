@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="kafka-clients-3.1.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/code/jars/static/kafka-clients-3.1.0.jar!/"/>
+	</lib>
+	<lib name="lz4-java-1.8.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/code/jars/static/lz4-java-1.8.0.jar!/"/>
+	</lib>
+	<lib name="slf4j-api-1.7.30.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/code/jars/static/slf4j-api-1.7.30.jar!/"/>
+	</lib>
+	<lib name="snappy-java-1.1.8.4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/code/jars/static/snappy-java-1.1.8.4.jar!/"/>
+	</lib>
+</component>

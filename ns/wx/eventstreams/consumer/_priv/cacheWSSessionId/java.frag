@@ -3,9 +3,10 @@
 <Values version="2.0">
   <value name="name">cacheWSSessionId</value>
   <value name="encodeutf8">true</value>
-  <value name="body">Ly8gcGlwZWxpbmUgaW4KSURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3IgPSBwaXBlbGluZS5nZXRD
-dXJzb3IoKTsKU3RyaW5nIHNlc3Npb25JZCA9IElEYXRhVXRpbC5nZXRTdHJpbmcocGlwZWxpbmVD
-dXJzb3IsICJzZXNzaW9uSWQiKTsKcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOwoKCmlmIChzZXNz
-aW9uSWQgIT0gbnVsbCkgewoJaWYgKHNlc3Npb25JZC5lcXVhbHMoIm51bGwiKSkgCgkJX3Nlc3Np
-b25JZCA9IG51bGw7CgllbHNlCgkJX3Nlc3Npb25JZCA9IHNlc3Npb25JZDsKfQ==</value>
+  <value name="body">Ly8gcGlwZWxpbmUgaW4NCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0
+Q3Vyc29yKCk7DQpTdHJpbmcgc2Vzc2lvbklkID0gSURhdGFVdGlsLmdldFN0cmluZyhwaXBlbGlu
+ZUN1cnNvciwgInNlc3Npb25JZCIpOw0KcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOw0KDQoNCmlm
+IChzZXNzaW9uSWQgIT0gbnVsbCkgew0KCWlmIChzZXNzaW9uSWQuZXF1YWxzKCJudWxsIikpIA0K
+CQlfc2Vzc2lvbklkID0gbnVsbDsNCgllbHNlDQoJCV9zZXNzaW9uSWQgPSBzZXNzaW9uSWQ7DQp9
+</value>
 </Values>

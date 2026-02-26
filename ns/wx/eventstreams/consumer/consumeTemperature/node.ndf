@@ -38,7 +38,7 @@
     <value name="pollingIntervalUnit">MILLISECONDS</value>
     <number name="pollingRequestSize" type="Integer">100</number>
     <value name="aliasName">WxIBMEventStreamsDemo_IBMEventStream_SaaS</value>
-    <Boolean name="enabled">true</Boolean>
+    <Boolean name="enabled">false</Boolean>
     <value name="transientFailureAction">NONE</value>
     <value name="failureAction">NONE</value>
     <null name="resourceMonitorSvc"/>
